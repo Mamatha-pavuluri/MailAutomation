@@ -22,7 +22,7 @@ public class browse {
 			driver.get("http://gmail.com");
 			driver.manage().window().maximize();
 			WebElement usernameElement=driver.findElement(By.id("identifierId"));
-			usernameElement.sendKeys("mamatha0821");
+			usernameElement.sendKeys("enter username");
 			usernameElement.sendKeys(Keys.ENTER);
 			try {
 				Thread.sleep(1000);
@@ -31,7 +31,7 @@ public class browse {
 				e.printStackTrace();
 			}
 			WebElement password=driver.findElement(By.name("password"));
-			password.sendKeys("Venky@888");
+			password.sendKeys("pwd");
 			password.sendKeys(Keys.ENTER);
 			}
 		public void chrome() throws Exception
@@ -43,11 +43,11 @@ public class browse {
 				driver.get("http://gmail.com");
 				driver.manage().window().maximize();
 				WebElement usernameElement=driver.findElement(By.id("identifierId"));
-				usernameElement.sendKeys("mamatha0821");
+				usernameElement.sendKeys("enter username");
 				usernameElement.sendKeys(Keys.ENTER);
 				Thread.sleep(1000);
 				WebElement password=driver.findElement(By.name("password"));
-				password.sendKeys("Venky@888");
+				password.sendKeys("enter pwd");
 				password.sendKeys(Keys.ENTER);
 			}
 
